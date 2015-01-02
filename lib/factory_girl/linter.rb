@@ -15,9 +15,9 @@ module FactoryGirl
       end
     end
 
-    private
-
     attr_reader :factories_to_lint, :invalid_factories
+
+    private
 
     def calculate_invalid_factories
       factories_to_lint.inject({}) do |result, factory|
